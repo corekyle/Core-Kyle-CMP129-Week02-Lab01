@@ -29,7 +29,7 @@ public class KineticEnergy
                           "Mass: %,.2f kg\n" +
                           "Velocity: %,.2f m/s\n" +
                           "--------------------\n" +
-                          "Kenetic Energy: %,.2f", mass, velocity, kineticEnergy);
+                          "Kenetic Energy: %,.2f J", mass, velocity, kineticEnergy);
 
 
     }   // END OF MAIN
@@ -43,7 +43,7 @@ public class KineticEnergy
         double m = mass;
         double v = velocity;
 
-        KE =  0.5 * Math.pow((m * v), 2);
+        KE =  0.5 * (m * Math.pow(v, 2));
 
 //        System.out.println(KE); // Display results for testing
 
